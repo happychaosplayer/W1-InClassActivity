@@ -1,7 +1,9 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
+Hello world!
+1. The Camera stays at its default starting location when making the camera not a child/component of the cat
+2. https://happychaosplayer.itch.io/w1-in-class-activity
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
