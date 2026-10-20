@@ -22,6 +22,11 @@ Think of human body part as the class and the components can be referred to as b
 Part 3
 When the value of ballRenderer.color *= 1.5f over and over again because the average of x and y are always above 2, the ball gets really bright because of very large color values.
 
+### W4
+Table #1
+1. Added Rigidbody components to all objects that require physics such as gravity and drag, in this case we wanted the soccer ball to stay on the ground and bounce because of gravity, acting like an actual soccer ball, as well as the cat to move around like an actual cat that has physics. IsTrigger was enabled on anything we wanted to be invisible but still detect collisions, so we enabled it for the Goal object's box collider.
+2. The Cat object's capsule collider was not properly aligned on the cat so we adjsuted it to align on the cat.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
