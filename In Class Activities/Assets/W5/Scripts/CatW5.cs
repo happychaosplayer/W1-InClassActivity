@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class CatW5 : MonoBehaviour
@@ -31,7 +32,41 @@ public class CatW5 : MonoBehaviour
         //          changing that axis?
         //      Should I modify translation with Vector addition, or multiplication,
         //          or both?
-        //
+
+        Vector3 movement = Vector3.zero;
+
+        float value = 1f;
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            if(_flipWSControls == true)
+            {
+                movement.z = -value;
+            }
+            else
+            {
+                movement.z = value;
+            }
+        }
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            if (_flipWSControls == true)
+            {
+                movement.z = value;
+            }
+            else
+            {
+                movement.z = -value;
+            }
+        }
+
+        transform.Translate(movement * _moveSpeed * Time.deltaTime);
+
+        Vector3 translation = Vector3.zero;
+
+        
+
+
         // STEP 2
         // After Step 1 is working, add more code to make it possible to flip
         //      the player's control scheme.
@@ -42,10 +77,6 @@ public class CatW5 : MonoBehaviour
         //      them forwards.
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
-
-        Vector3 translation = Vector3.zero;
-        
-
 
         // STEP 1 & 2 ---------------------------------------------------------
 

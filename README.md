@@ -27,6 +27,11 @@ Table #1
 1. Added Rigidbody components to all objects that require physics such as gravity and drag, in this case we wanted the soccer ball to stay on the ground and bounce because of gravity, acting like an actual soccer ball, as well as the cat to move around like an actual cat that has physics. IsTrigger was enabled on anything we wanted to be invisible but still detect collisions, so we enabled it for the Goal object's box collider.
 2. The Cat object's capsule collider was not properly aligned on the cat so we adjsuted it to align on the cat.
 
+### W5
+1. The class DeerW5 will need 2 member variables. One of them will be a variable under the class NavMeshAgent, and the second one will be the variable under the Transform class. These 2 together will let use the SetDestination method under the NavMeshAgent instance variable and input in the position of the Transform variable we created inside of the parameters.
+2. Start() only
+3. The method will just need a Start() method so that once the program begins the NavMeshAgent knows what object and its transform it should path towards, the NavMeshAgent will handle the movement every frame.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
