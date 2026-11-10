@@ -32,6 +32,14 @@ Table #1
 2. Start() only
 3. The method will just need a Start() method so that once the program begins the NavMeshAgent knows what object and its transform it should path towards, the NavMeshAgent will handle the movement every frame.
 
+### W7
+Category Assignment: Unity Engine
+https://docs.google.com/document/d/1_tBpKPam_XOvv1F1GfLHlH7EezarfYFHKBYlpzPdyPM/edit?tab=t.0
+
+1. Member variables should be the speed of the bat alongside the Transform class so we can access the target.
+2. A StartChase() with the transform.position and Vector2.MoveTowards() method, and StopChase() which has nothing.
+3. ABOVE
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
